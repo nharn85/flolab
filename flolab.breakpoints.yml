@@ -1,0 +1,16 @@
+# Breakpoints - change based on site need
+flolab.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'
+flolab.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+flolab.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+flolab.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+flolab.small:
+  label: small
+  mediaQuery: 'all and (min-width: 25em)'

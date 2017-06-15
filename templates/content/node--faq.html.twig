@@ -1,0 +1,7 @@
+{{ attach_library('flolab/accordion') }}
+{% include "@molecules/accordion-item/accordion-item.twig"
+  with {
+    "accordion_item": label,
+    "accordion_def": content
+  }
+%}

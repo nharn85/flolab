@@ -1,0 +1,10 @@
+.card {
+  padding: 1em;
+  flex-basis: calc((100% - 6em) / 3);
+}
+
+// Variations
+.card--bg {
+  @extend .card;
+  background-color: $gray-lightest;
+}

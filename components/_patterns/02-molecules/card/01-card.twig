@@ -1,0 +1,11 @@
+<div class="card{% if variation %}--{{variation}}{% endif %}">
+  <img src="{{ image_src }}" alt="{{ image_alt }}">
+  <h2 class="card__title heading-2">
+    {% if url %}
+      <a href="{{ url }}">{{ title }}</a>
+    {% else %}
+      {{ title }}
+    {% endif %}
+  </h2>
+  {% if body %}<p class="card__body">{{ body }}</p>{% endif %}
+</div>

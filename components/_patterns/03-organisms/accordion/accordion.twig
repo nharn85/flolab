@@ -1,0 +1,18 @@
+<dl class="accordion-item">
+  {# Drupal content (views) #}
+  {% if rows %}
+    {% for row in rows %}
+      {{ row.content }}
+    {% endfor %}
+    {# PL content in JSON #}
+  {% else %}
+    {% for listItem in listItems.four %}
+      {% include "@molecules/accordion-item/accordion-item.twig"
+        with {
+          "accordion_item": listItem.headline.short,
+          "accordion_def": listItem.excerpt.long
+        }
+      %}
+    {% endfor %}
+  {% endif %}
+</dl>
